@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import { useEffect, useRef, Suspense, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,11 +12,10 @@ import {
   FileText,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
-import Spline from "@splinetool/react-spline";
 import Link from "next/link";
-import { cn, scrollTo } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -26,7 +25,6 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
-import { motion } from "framer-motion";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -459,7 +457,7 @@ export default function Home() {
                 Autoplay({
                   delay: 4000,
                   stopOnInteraction: false,
-                }) as any,
+                })
               ]}
               className="w-full"
             >
@@ -580,7 +578,7 @@ export default function Home() {
                   Autoplay({
                     delay: 3000,
                     stopOnInteraction: false,
-                  }) as any,
+                  })
                 ]}
                 className="w-full"
               >
