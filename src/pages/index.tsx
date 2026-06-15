@@ -323,7 +323,7 @@ export default function Home() {
 
                 {/* LinkedIn */}
                 <div className="group relative">
-                  <Link href="https://www.linkedin.com/in/praveenan00/" target="_blank">
+                  <Link href="https://www.linkedin.com/in/praveenan-jeevarethinam-93bb7420b/" target="_blank">
                     <div className="rounded-full bg-white/5 p-3 transition hover:bg-white/10">
                       <Linkedin className="h-5 w-5 text-foreground" />
                     </div>
@@ -835,7 +835,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:prvaeenanjvp@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
