@@ -266,17 +266,17 @@ export default function Home() {
         >
           <div className={styles.intro}>
             <div
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5"
-            >
-              <span className={styles.pill}>blockchain</span>
-              <span className={styles.pill}>cardano</span>
-              <span className={styles.pill}>smart-contract</span>
-              <span className={styles.pill}>web3</span>
-              <span className={styles.pill}>full-stack</span>
-            </div>
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed=".09"
+            className="flex w-full flex-wrap items-center gap-2 sm:gap-2.5"
+          >
+            <span className={styles.pill}>blockchain</span>
+            <span className={styles.pill}>cardano</span>
+            <span className={styles.pill}>smart-contract</span>
+            <span className={styles.pill}>web3</span>
+            <span className={styles.pill}>full-stack</span>
+          </div>
             <div>
               <h1
                 data-scroll
@@ -391,10 +391,25 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed="-.01"
-            id={styles["canvas-container"]}
-            className="mt-14 h-full w-full xl:mt-0"
+            className="mt-12 flex w-full items-center justify-center overflow-visible xl:mt-0 xl:w-[45%]"
           >
-            <Image src={"/assets/profile.png"} alt="prfile" width={680} height={500}/>
+            <div className="relative flex items-center justify-center rounded-full">
+              <div className="absolute rounded-full bg-[#7C83FF]/30 blur-[150px] h-[360px] w-[360px] sm:h-[520px] sm:w-[520px] xl:h-[700px] xl:w-[700px]" />
+              <div className="relative flex items-center justify-center rounded-full h-[300px] w-[300px] sm:h-[420px] sm:w-[420px] xl:h-[520px] xl:w-[520px]">
+                <div className="flex items-center justify-center rounded-full border-[#7C83FF]/30 bg-[#080812] shadow-[0_0_140px_rgba(124,131,255,0.45)] h-[270px] w-[270px] border-[6px] sm:h-[380px] sm:w-[380px] sm:border-[8px] xl:h-[470px] xl:w-[470px] xl:border-[10px]">
+
+                  <Image
+                    src="/assets/profile.png"
+                    alt="Praveenan"
+                    width={420}
+                    height={420}
+                    priority
+                    className="rounded-full object-cover object-top h-[240px] w-[240px] sm:h-[340px] sm:w-[340px] xl:h-[420px] xl:w-[420px]"
+                  />
+
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -501,7 +516,7 @@ export default function Home() {
           {/* ===== BADGES ===== */}
             <div className="mt-20">
               <h3 className="mb-8 text-2xl font-semibold tracking-tight">
-                🏅 Badges
+                🏅 Cardano Badges
               </h3>
 
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -656,76 +671,70 @@ export default function Home() {
 
         {/* Experience */}
         <section id="experience" data-scroll-section>
-          <div
-            data-scroll
-            data-scroll-speed=".4"
-            className="my-32"
-          >
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+          <div data-scroll data-scroll-speed=".4" className="my-32">
+            <span className="inline-flex items-center rounded-full border border-[#7C83FF]/30 bg-[#7C83FF]/10 px-4 py-2 text-sm font-semibold text-[#8EA2FF]">
               💼 Experience
             </span>
 
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight xl:text-6xl">
-              Internship Experience.
+            <h2 className="mt-5 text-4xl font-semibold tracking-tight xl:text-6xl">
+              Internship <span className="text-gradient clash-grotesk">Experience.</span>
             </h2>
 
-            <p className="mt-2 text-base tracking-tight text-muted-foreground xl:text-lg">
-              Professional experience gained through full-stack software engineering
-              and enterprise application development.
+            <p className="mt-3 max-w-4xl text-base tracking-tight text-muted-foreground xl:text-lg">
+              Professional experience gained through full-stack software engineering,
+              enterprise application development, API integration, and real-world deployment workflows.
             </p>
 
-            {/* Experience Card */}
-            <div className="mt-14">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur transition hover:bg-white/[0.07]">
+            <div className="relative mt-14 overflow-hidden rounded-3xl border border-[#7C83FF]/20 bg-gradient-to-br from-[#17172a] via-[#11111f] to-[#080812] p-[1px] shadow-[0_0_80px_rgba(124,131,255,0.18)]">
+              <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#7C83FF]/25 blur-[90px]" />
+              <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-cyan-400/10 blur-[90px]" />
 
-                {/* Top */}
-                <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+              <div className="relative rounded-3xl bg-[#0b0b14]/80 p-6 backdrop-blur md:p-8 xl:p-10">
+                <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
                   <div>
-                    <h3 className="text-2xl font-semibold tracking-tight text-white">
+                    <div className="mb-4 inline-flex rounded-full bg-[#7C83FF]/10 px-4 py-2 text-sm font-medium text-[#8EA2FF]">
+                      Jul 2024 – Jan 2025 · 6 Months
+                    </div>
+
+                    <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
                       Full Stack Developer Intern
                     </h3>
 
                     <Link
                       href="https://invictainnovations.com/index.html"
                       target="_blank"
-                      className="mt-1 inline-flex items-center text-base text-primary transition hover:underline"
+                      className="mt-2 inline-flex items-center text-base font-medium text-[#8EA2FF] transition hover:text-white hover:underline"
                     >
                       Invicta Innovations (Pvt.) Ltd.
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </div>
 
-                  <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-muted-foreground">
-                    Jul 2024 – Jan 2025 · 6 Months
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+                    <p className="text-sm text-muted-foreground">Role Type</p>
+                    <p className="mt-1 font-medium text-white">Software Engineering Internship</p>
                   </div>
                 </div>
 
-                {/* Description */}
-                <p className="mt-6 max-w-4xl text-[15px] leading-7 text-muted-foreground">
-                  Worked as a Full Stack Developer focusing on enterprise-level web and
-                  mobile application development using React, Java, PostgreSQL, and
-                  modern backend technologies. Contributed to frontend and backend
-                  feature implementation, API integration, database management, bug
-                  fixing, and real-world software deployment workflows.
+                <p className="mt-8 max-w-5xl text-[15px] leading-7 text-muted-foreground">
+                  Worked as a Full Stack Developer focusing on enterprise-level web and mobile
+                  application development using React, Java, PostgreSQL, and modern backend
+                  technologies. Contributed to frontend and backend feature implementation,
+                  API integration, database management, bug fixing, and real-world software
+                  deployment workflows.
                 </p>
 
-                {/* Skills */}
-                <div className="mt-6 flex flex-wrap gap-3">
-                  {[
-                    "React",
-                    "Java",
-                    "PostgreSQL",
-                    "Spring Boot",
-                    "REST APIs",
-                    "Git",
-                  ].map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-muted-foreground"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {["React", "Java", "PostgreSQL", "Spring Boot", "REST APIs", "Git"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-[#7C83FF]/20 bg-[#7C83FF]/10 px-4 py-2 text-sm text-[#CBD3FF] transition-all duration-300 hover:bg-[#8EA2FF] hover:text-white"
+                      >
+                        {tech}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
@@ -735,61 +744,60 @@ export default function Home() {
 
         {/* Publications */}
         <section id="publications" data-scroll-section>
-          <div
-            data-scroll
-            data-scroll-speed=".4"
-            className="my-32"
-          >
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+          <div data-scroll data-scroll-speed=".4" className="my-32">
+            <span className="inline-flex items-center rounded-full border border-[#7C83FF]/30 bg-[#7C83FF]/10 px-4 py-2 text-sm font-semibold text-[#8EA2FF]">
               📚 Publications
             </span>
 
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight xl:text-6xl">
-              Research & Publications.
+            <h2 className="mt-5 text-4xl font-semibold tracking-tight xl:text-6xl">
+              Research &{" "}
+              <span className="text-gradient clash-grotesk">Publications.</span>
             </h2>
 
-            <p className="mt-2 text-base tracking-tight text-muted-foreground xl:text-lg">
-              Academic research and publications focused on artificial intelligence,
-              image processing, and real-world technology applications.
+            <p className="mt-3 max-w-4xl text-base tracking-tight text-muted-foreground xl:text-lg">
+              Academic research focused on artificial intelligence, computer vision,
+              image processing, and real-world assistive technology applications.
             </p>
 
-            {/* Publication Card */}
-            <div className="mt-14">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur transition hover:bg-white/[0.07]">
+            <div className="relative mt-14 overflow-hidden rounded-3xl border border-[#7C83FF]/20 bg-gradient-to-br from-[#17172a] via-[#11111f] to-[#080812] p-[1px] shadow-[0_0_80px_rgba(124,131,255,0.18)]">
+              <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#7C83FF]/25 blur-[90px]" />
+              <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-cyan-400/10 blur-[90px]" />
 
-                {/* Top */}
-                <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+              <div className="relative rounded-3xl bg-[#0b0b14]/80 p-6 backdrop-blur md:p-8 xl:p-10">
+                <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
                   <div>
-                    <h3 className="text-2xl font-semibold tracking-tight text-white">
+                    <div className="mb-4 inline-flex rounded-full bg-[#7C83FF]/10 px-4 py-2 text-sm font-medium text-[#8EA2FF]">
+                      IEEE Xplore · 2026
+                    </div>
+
+                    <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
                       Gaze Tracking System
                     </h3>
 
                     <Link
                       href="https://ieeexplore.ieee.org/document/11497785"
                       target="_blank"
-                      className="mt-2 inline-flex items-center text-base text-primary transition hover:underline"
+                      className="mt-2 inline-flex items-center text-base font-medium text-[#8EA2FF] transition hover:text-white hover:underline"
                     >
                       Published in IEEE Xplore
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </Link>
                   </div>
 
-                  <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-muted-foreground">
-                    2026
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+                    <p className="text-sm text-muted-foreground">Research Area</p>
+                    <p className="mt-1 font-medium text-white">Computer Vision & AI</p>
                   </div>
                 </div>
 
-                {/* Description */}
-                <p className="mt-6 max-w-4xl text-[15px] leading-7 text-muted-foreground">
-                  Final year research project focused on developing an intelligent
-                  gaze tracking system using computer vision and image processing
-                  techniques. The research explores real-time eye movement detection
-                  and tracking methodologies for interactive and assistive technology
-                  applications.
+                <p className="mt-8 max-w-5xl text-[15px] leading-7 text-muted-foreground">
+                  Final year research project focused on developing an intelligent gaze
+                  tracking system using computer vision and image processing techniques.
+                  The research explores real-time eye movement detection and tracking
+                  methodologies for interactive and assistive technology applications.
                 </p>
 
-                {/* Tags */}
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-8 flex flex-wrap gap-3">
                   {[
                     "IEEE",
                     "Computer Vision",
@@ -800,7 +808,7 @@ export default function Home() {
                   ].map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-muted-foreground"
+                      className="rounded-full border border-[#7C83FF]/20 bg-[#7C83FF]/10 px-4 py-2 text-sm text-[#CBD3FF] transition-all duration-300 hover:bg-[#8EA2FF] hover:text-white"
                     >
                       {tag}
                     </span>
