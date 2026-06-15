@@ -585,6 +585,7 @@ export default function Home() {
             {/* Horizontal Carousel */}
             <div className="mt-14">
               <Carousel
+                setApi={setCarouselApi}
                 opts={{
                   align: "start",
                   loop: true,
@@ -593,7 +594,7 @@ export default function Home() {
                   Autoplay({
                     delay: 3000,
                     stopOnInteraction: false,
-                  })
+                  }),
                 ]}
                 className="w-full"
               >
@@ -660,11 +661,11 @@ export default function Home() {
 
               {/* Project Counter */}
               <div className="mt-4 text-center text-sm text-muted-foreground">
-                <span className="font-semibold">
-                  {current} / {count}
-                </span>{" "}
-                projects
-              </div>
+              <span className="font-semibold">
+                {current || 1} / {count || projects.length}
+              </span>{" "}
+              projects
+            </div>
             </div>
           </div>
         </section>
