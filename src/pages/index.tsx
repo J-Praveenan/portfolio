@@ -86,39 +86,6 @@ const projects = [
   },
 ];
 
-const services = [
-  {
-    service: "Frontend Development",
-    description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
-    icon: Code2,
-  },
-  {
-    service: "UX Design",
-    description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
-  },
-  {
-    service: "SEO Optimization",
-    description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
-    icon: MonitorSmartphone,
-  },
-  {
-    service: "Backend Development",
-    description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
-    icon: Eye,
-  },
-];
-
 
 const skills = [
   { name: "Aiken", image: "/assets/skills/aiken.png" },
@@ -144,6 +111,10 @@ const certifications = [
   {
     title: "AI & Blockchain for Business Leaders",
     image: "/assets/certifications/ai-and-blockchain.png",
+  },
+  {
+    title: "FYP Arena 2025 - Certificate of Participation",
+    image: "/assets/certifications/fyp.jpeg",
   },
   {
     title: "Web Design for Beginners",
@@ -694,7 +665,7 @@ export default function Home() {
                 <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
                   <div>
                     <div className="mb-4 inline-flex rounded-full bg-[#7C83FF]/10 px-4 py-2 text-sm font-medium text-[#8EA2FF]">
-                      Jul 2024 – Jan 2025 · 6 Months
+                      Jul 2024 – Jan 2025 · 7 Months
                     </div>
 
                     <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
@@ -768,7 +739,7 @@ export default function Home() {
                 <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
                   <div>
                     <div className="mb-4 inline-flex rounded-full bg-[#7C83FF]/10 px-4 py-2 text-sm font-medium text-[#8EA2FF]">
-                      IEEE Xplore · 2026
+                      ICIPRoB · 2026
                     </div>
 
                     <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
@@ -836,7 +807,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:prvaeenanjvp@gmail.com" passHref>
+            <Link href="mailto:praveenanjvp@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
