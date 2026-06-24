@@ -94,11 +94,23 @@ const skills = [
   { name: "JavaScript", image: "/assets/skills/javascript.png" },
   { name: "TypeScript", image: "/assets/skills/typescript.png" },
   { name: "Next.js", image: "/assets/skills/nextjs.png" },
+
+  { name: "HTML", image: "/assets/skills/html.png" },
+  { name: "CSS", image: "/assets/skills/css.png" },
+
   { name: "Java", image: "/assets/skills/java.png" },
-  { name: "SpringBoot", image: "/assets/skills/spring-boot.png" },
-  { name: "MySql", image: "/assets/skills/mysql.png" }, 
-  { name: "PostgreSql", image: "/assets/skills/postgresql.png" },
+  { name: "Spring Boot", image: "/assets/skills/spring-boot.png" },
+
+  { name: "MySQL", image: "/assets/skills/mysql.png" },
+  { name: "PostgreSQL", image: "/assets/skills/postgresql.png" },
+  { name: "MongoDB", image: "/assets/skills/mongodb.png" },
+
   { name: "Python", image: "/assets/skills/python.png" },
+  { name: "Pinata IPFS", image: "/assets/skills/pinata.png" },
+
+  { name: "Git", image: "/assets/skills/git.png" },
+  { name: "Figma", image: "/assets/skills/figma.png" },
+
   { name: "Postman", image: "/assets/skills/postman.png" },
 ];
 
